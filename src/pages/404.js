@@ -1,6 +1,12 @@
-import React from "react";
+import { useRouter } from "next/router";
 
 const NotFound = () => {
+  const router = useRouter();
+
+  setTimeout(() => {
+    router.push("/");
+  }, 5000);
+
   return (
     <div>
       <img
